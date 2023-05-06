@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.row h1 {
+    font-size: 20px;
+}
+
+.row .cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.row .cards::-webkit-scrollbar {
+    display: none;
+}
+
+.row .cards .card {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ae005bd692d36cea332f6f02860fe166ff1cc4baf9c2975bea96b2a00fc7a015._RI_TTW_.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 150px;
+    height: 200px;
+}
