@@ -1,8 +1,25 @@
 import React from 'react'
 import './Header.css'
-function Header() {
+import { useState } from 'react'
+import { useEffect } from 'react'
+function Header() { 
+
+    const [state,setState] = useState(false)
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY > 100){
+                setState(true)
+            }else{
+                setState(false)
+            }
+        })
+        return(
+            window.removeEventListener("scroll",()=>{})
+        )
+    },[]);
+    
     return (
-        <div className='header'>
+        <div className={`header ${state && "header-black"}`}>
             <div className="logo">
                 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
             </div>

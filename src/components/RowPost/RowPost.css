@@ -4,12 +4,12 @@
     align-items: flex-start;
     justify-content: center;
     color: white;
-    padding: 20px 20px;
-    gap: 20px;
+    padding: 8px 0 0 0;
 }
 
 .row h1 {
     font-size: 20px;
+    margin-left: 30px;
 }
 
 .row .cards {
@@ -20,6 +20,7 @@
     gap: 12px;
     overflow-x: scroll;
     white-space: nowrap;
+    padding: 20px 26px;
 }
 
 .row .cards::-webkit-scrollbar {
@@ -28,8 +29,80 @@
 
 .row .cards .card {
     background-image: url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/ae005bd692d36cea332f6f02860fe166ff1cc4baf9c2975bea96b2a00fc7a015._RI_TTW_.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    min-width: 150px;
-    height: 200px;
+    min-width:380px;
+    min-height: 215px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.row .cards .card:hover{
+    transform: scale(1.2);
+    transition: 500ms ease-in-out;
+    z-index: 3;
+}
+.video-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+}
+.small-card{
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 220px;
+    min-height: 125px;
+    border-radius: 6px;
+}
+.small-card:hover{
+    transform: scale(1.2);
+    transition: 500ms ease-in-out;
+}
+.poster-card{
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 165px;
+    min-height: 220px;
+    border-radius: 8px;
+}
+.poster-card:hover{
+    transform: scale(1.2);
+    transition: 500ms ease-in-out;
+}
+.card-content{
+    width: 100%;
+    margin: 0 0 0 0;
+}
+.card-content p{
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 10px;
+    opacity: 40%;
+    padding: 0 20px;
+}
+.card-content h1{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 6px 0;
+    padding: 0 20px;
+    
+}
+.card-content span{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.card-content div{
+    width: 100%;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.32),rgb(0, 0, 0));
+    backdrop-filter: blur(1px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
 }

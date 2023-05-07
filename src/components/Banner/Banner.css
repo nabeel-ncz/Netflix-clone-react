@@ -1,9 +1,8 @@
 .banner{
-    background-image: url("https://cdn.flickeringmyth.com/wp-content/uploads/2021/03/Mortal-Kombat-banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 470px;
+    height: 620px;
     color: white; 
 }
 .content{
@@ -31,8 +30,14 @@
 }
 .bottom-fade{
     width: 100%;
-    height: 130px;
+    height: 270px;
     position: absolute;
-    top: 400px;
-    background-image: linear-gradient(180deg,rgba(37, 37, 37, 0),#111);
+    top: 352px;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0),#020202);
+}
+.top_fade{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-image: linear-gradient(180deg,#02020282,rgba(255, 255, 255, 0));
 }
